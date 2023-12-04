@@ -1,0 +1,184 @@
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.game {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.input {
+  border-radius: 5px;
+  border: none;
+  width: 160px;
+  font-family: 'Lato', sans-serif;
+  color: #fff;
+  height: 40px;
+  background: radial-gradient(
+    circle,
+    rgba(247, 150, 192, 1) 0%,
+    rgba(118, 174, 241, 1) 100%
+  );
+  text-align: center;
+  font-size: 20px;
+}
+
+.startRange {
+  border-radius: 5px;
+  border: none;
+  width: 160px;
+  font-family: 'Lato', sans-serif;
+  color: #fff;
+  height: 40px;
+  background: radial-gradient(
+    circle,
+    rgba(247, 150, 192, 1) 0%,
+    rgba(118, 174, 241, 1) 100%
+  );
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.endRange {
+  border-radius: 5px;
+  border: none;
+  width: 160px;
+  font-family: 'Lato', sans-serif;
+  color: #fff;
+  height: 40px;
+  background: radial-gradient(
+    circle,
+    rgba(247, 150, 192, 1) 0%,
+    rgba(118, 174, 241, 1) 100%
+  );
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.startRange_text {
+  font-family: 'Lato', sans-serif;
+  color: grey;
+}
+.endRange_text {
+  font-family: 'Lato', sans-serif;
+  color: grey;
+}
+
+.messege {
+  font-size: 20px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.messege_error {
+  font-size: 20px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: red;
+}
+.messege_hint {
+  font-size: 20px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: green;
+}
+
+.restart_game {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  width: 160px;
+  height: 40px;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px 25px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+    7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+  outline: none;
+
+  background: rgb(247, 150, 192);
+  background: radial-gradient(
+    circle,
+    rgba(247, 150, 192, 1) 0%,
+    rgba(118, 174, 241, 1) 100%
+  );
+  line-height: 42px;
+  padding: 0;
+  border: none;
+}
+
+.restart_game:before,
+.restart_game:after {
+  position: absolute;
+  content: '';
+  height: 0%;
+  width: 1px;
+  box-shadow: -1px -1px 20px 0px rgba(255, 255, 255, 1),
+    -4px -4px 5px 0px rgba(255, 255, 255, 1),
+    7px 7px 20px 0px rgba(0, 0, 0, 0.4), 4px 4px 5px 0px rgba(0, 0, 0, 0.3);
+}
+.restart_game:before {
+  right: 0;
+  top: 0;
+  transition: all 500ms ease;
+}
+.restart_game:after {
+  left: 0;
+  bottom: 0;
+  transition: all 500ms ease;
+}
+.restart_game:hover {
+  background: transparent;
+  color: #76aef1;
+  box-shadow: none;
+}
+.restart_game:hover:before {
+  transition: all 500ms ease;
+  height: 100%;
+}
+.restart_game:hover:after {
+  transition: all 500ms ease;
+  height: 100%;
+}
+
+.check {
+  margin-top: 20px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  width: 160px;
+  height: 40px;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px 25px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+    7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+  outline: none;
+
+  background: rgb(247, 150, 192);
+  background: radial-gradient(
+    circle,
+    rgba(247, 150, 192, 1) 0%,
+    rgba(118, 174, 241, 1) 100%
+  );
+  line-height: 42px;
+  padding: 0;
+  border: none;
+}
+
+.check:hover {
+  background: transparent;
+  color: #76aef1;
+  box-shadow: none;
+}

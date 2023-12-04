@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script defer src="./index.js"></script>
+  </head>
+  <body>
+    <div class="game">
+      <label for="startRange" class="startRange_text"
+        >Начальное значение:</label
+      >
+      <input
+        type="number"
+        class="startRange"
+        placeholder="От 1"
+        min="1"
+        max="1000"
+      />
+
+      <label for="endRange" class="endRange_text">Конечное значение:</label>
+      <input
+        type="number"
+        class="endRange"
+        placeholder="До 1000"
+        min="1"
+        max="1000"
+      />
+
+      <input type="number" placeholder="Введите число" class="input" />
+      <button class="check">Chek</button>
+      <h1 class="counterDisplay"></h1>
+      <p class="messege"></p>
+      <p class="messege_hint"></p>
+      <p class="messege_error"></p>
+
+      <button class="restart_game">Restart Game</button>
+    </div>
+  </body>
+</html>

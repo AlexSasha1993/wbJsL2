@@ -1,0 +1,23 @@
+body {
+  margin: 0;
+  background-image: url('./1660675213_2-kartinkin-net-p-pikselnie-oboi-na-rabochii-stol-krasivo-2.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+#root {
+  padding: 3rem;
+  text-align: center;
+}
+
+#root h1 {
+  font-family: 'Press Start 2P', 'monospace';
+  color: white;
+}
+
+#root canvas {
+  display: block;
+  margin: 0 auto;
+}

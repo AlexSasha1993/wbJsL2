@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Калькулятор калорий</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+  <body>
+    <div>
+      <h1>Калькулятор калорий</h1>
+      <label for="productName">Название продукта:</label>
+      <input type="text" id="productName" />
+      <label for="calories">Калории:</label>
+      <input type="number" id="calories" />
+      <button onclick="addProduct()">Добавить продукт</button>
+
+      <h2>Список продуктов</h2>
+      <label for="filter">Фильтр по названию:</label>
+      <input type="text" id="filter" oninput="filterProducts()" />
+      <button onclick="sortProducts()">Сортировать по калорийности</button>
+
+      <ul id="productList"></ul>
+
+      <h2>Съеденные калории за день</h2>
+      <p id="totalCalories">Съедено калорий: 0</p>
+      <p id="targetCalories">
+        Цель калорий: <span id="targetValue">2000</span>
+      </p>
+      <p id="warning" style="color: red"></p>
+
+      <button onclick="clearAll()">Очистить все данные</button>
+      <div id="chartWrapper">
+        <canvas id="caloriesChart" width="400" height="200"></canvas>
+      </div>
+    </div>
+
+    <script defer src="./index.js"></script>
+  </body>
+</html>
